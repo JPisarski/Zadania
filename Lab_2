@@ -1,0 +1,77 @@
+# Klasy i obiekty
+#
+# class House:
+#     color: str
+#     window_count: int
+#
+#     def __init__(self, color: str, window_count: int) -> None:
+#         self.color = color
+#         self.window_count = window_count
+#
+#     def get_color(self)->str:
+#         return f'Elewacja budynku ma kolor {self.color}.'
+#
+#     def add_windows(self, amount: int) -> None:
+#         self.window_count += amount
+#
+#     def __private_metode(self) -> None:
+#         print("coś")
+#
+#
+# house_1 = House("niebieski", 10)
+# house_2 = House("zielony", 8)
+#
+# print(f'Dom nr 1 ma {house_1.window_count} okien.')
+# print(f'Dom nr 2 ma {house_2.window_count} okien.')
+#
+# house_2.add_windows(3)
+# print(f'Dom nr 1 ma {house_1.window_count} okien.')
+# print(f'Dom nr 2 ma {house_2.window_count} okien.')
+#
+# print(house_1.get_color())
+# print(house_2.get_color())
+#
+# house_1.color = "afroamerykański"
+# print(house_1.get_color())
+# print(house_2.get_color())
+
+
+# zadanie_1
+
+from typing import Any
+
+
+from typing import Any
+
+
+class Node:
+    value: Any
+    next: "Node"
+
+    def __init__(self, value: Any, next: "Node") -> None:
+        self.value = value
+        self.next = next
+
+
+class LinkedList:
+    head: Node
+    tail: Node
+
+    def __init__(self, head: "Node" = None, tail: "None" = None) -> None:
+        self.head = head
+        self.tail = tail
+
+    def push(self, value: Any) -> None:
+        
+        head = Node(value)
+        
+
+
+list_ = LinkedList()
+assert list_.head == None
+list_.push(1)
+list_.push(1)
+list_.push(0)
+
+assert str(list_) == '0 -> 1'
+
