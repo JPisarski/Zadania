@@ -94,7 +94,8 @@ def remove_duplicates(txt: str, n: int) -> str:   # n = len(txt)
     if n <= 2:
         if txt[0] == txt[1]:
             return txt[0]
-        else: txt[0] + txt[1]
+        else: 
+            return txt[0] + txt[1]
     if txt[0] == txt[1]:
         return "" + remove_duplicates(txt[1::], n-1)
     else:
